@@ -1,0 +1,504 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bore",
+				"border-bottom"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"i",
+				"inline"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"m",
+				"meta	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"n",
+				"name"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "a_seniors.sublime-project",
+			"settings":
+			{
+				"buffer_size": 261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/san_ang_srs_main.css",
+			"settings":
+			{
+				"buffer_size": 9823,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/welcome.php",
+			"settings":
+			{
+				"buffer_size": 7067,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/Sunburst.tmTheme",
+			"settings":
+			{
+				"buffer_size": 15114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/Twilight.tmTheme",
+			"settings":
+			{
+				"buffer_size": 11869,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/XAMPP/xamppfiles/htdocs/finalproject/index.php",
+			"settings":
+			{
+				"buffer_size": 2041,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/XAMPP/xamppfiles/htdocs/testsite/login.php",
+			"settings":
+			{
+				"buffer_size": 1506,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 369.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Discover Packages"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sft",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sf",
+				"SFTP: Setup Server…"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Channel"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/seniors",
+		"/Applications/XAMPP/xamppfiles/htdocs/jquery/finalproject.sublime-project",
+		"/Applications/XAMPP/htdocs/finalproject/insert.php",
+		"/Applications/XAMPP/htdocs/jquery/jquery11api.html",
+		"/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/View in Browser/Default (OSX).sublime-keymap",
+		"/Applications/XAMPP/xamppfiles/htdocs/jquery/jquery.sublime-project",
+		"/Applications/XAMPP/htdocs/jquery/jquery13drop.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/gardner-austin/css/gardner.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/gardner-austin/js/gardnerjs.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/finalproject/insert.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/gardner-austin/test2.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/finalproject/test.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/finalproject/index.php",
+		"/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/User/View In Browser.sublime-settings",
+		"/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Applications/XAMPP/xamppfiles/htdocs/finalproject/untitled",
+		"/Applications/XAMPP/xamppfiles/htdocs/bitnami.css",
+		"/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/Applications/XAMPP/htdocs/index.php",
+		"/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/Sunburst.tmTheme",
+		"/Applications/XAMPP/xamppfiles/htdocs/gardner-austin/submit.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/gardner-austin/pics for use/pic1.jpg",
+		"/Applications/XAMPP/xamppfiles/htdocs/gardner-austin/test.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mail",
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "a_seniors.sublime-project",
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/san_ang_srs_main.css",
+					"settings":
+					{
+						"buffer_size": 9823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/controllers/welcome.php",
+					"settings":
+					{
+						"buffer_size": 7067,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/Sunburst.tmTheme",
+					"settings":
+					{
+						"buffer_size": 15114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								719,
+								712
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/mileschick/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/Twilight.tmTheme",
+					"settings":
+					{
+						"buffer_size": 11869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								613,
+								606
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Applications/XAMPP/xamppfiles/htdocs/finalproject/index.php",
+					"settings":
+					{
+						"buffer_size": 2041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Applications/XAMPP/xamppfiles/htdocs/testsite/login.php",
+					"settings":
+					{
+						"buffer_size": 1506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"htdocs/index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true
+}
