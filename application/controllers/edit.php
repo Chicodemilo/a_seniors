@@ -119,32 +119,8 @@ class Edit extends CI_Controller {
         $this->load->model('search');
         $categories = $this->search->get_categories();
 
-        // print_r($categories);
-
         $this->load->model('edit_model');
         $resources = $this->edit_model->get_resource($id);
-
-        // $all_categories[] = '';
-
-        // foreach ($categories as $category_row) {
-        	
-	       //  if($category_row['categoryone'] != ''){
-	       //          array_push($all_categories, $category_row['categoryone']);
-	       //      }
-
-	       //      if($category_row['categorytwo'] != ''){
-	       //          array_push($all_categories, $category_row['categorytwo']);
-	       //      }
-
-	       //      if($category_row['categorythree'] != ''){
-	       //          array_push($all_categories, $category_row['categorythree']);
-	       //      }
-        // }
-
-        // asort($all_categories);
-        // $all_categories = array_unique($all_categories);
-
-        // print_r($all_categories);
 
         $data = array('resources' => $resources, 'categories' => $categories, 'id' => $id,);
 
@@ -286,9 +262,15 @@ class Edit extends CI_Controller {
     	}else{
     		redirect('edit/');
     	}
+    }
 
 
 
+    public function custom_category($id){
+        $data['id'] = $id;
+        $this->load->view('edit/header.php');
+        $this->load->view('edit/custom_category.php', $data);
+        $this->load->view('footer.php');
     }
 
 
