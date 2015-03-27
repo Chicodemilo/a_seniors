@@ -29,22 +29,25 @@ foreach($resources AS $row) {
             echo "<table min-width='800px'><tr class='header_row_edit'><td width='10%'>CATEGORY 1</td><td width='10%'>CATEGORY 2</td><td width='10%'>CATEGORY 3</td></tr>";
 
             echo "<tr class='row1_edit'><td><input type='hidden' id='categoryone_value' value='".$row['categoryone']."'> <select name='categoryone' id='categoryone' required> ";
+            echo "<option value=''>None</option>";
             foreach($categories AS $category_row){
-                echo "<option value='".$category_row."'>".$category_row."</option>";
+                echo "<option value='".$category_row['name']."'>".$category_row['name']."</option>";
             }     
             echo "</select></td>";
 
  
             echo "<td><input type='hidden' id='categorytwo_value' value='".$row['categorytwo']."'> <select name='categorytwo' id='categorytwo'> ";
+            echo "<option value=''>None</option>";
             foreach($categories AS $category_row){
-                echo "<option value='".$category_row."'>".$category_row."</option>";
+                echo "<option value='".$category_row['name']."'>".$category_row['name']."</option>";
             }     
             echo "</select></td>";
 
  
             echo "<td><input type='hidden' id='categorythree_value' value='".$row['categorythree']."'> <select name='categorythree' id='categorythree'> ";
+            echo "<option value=''>None</option>";
             foreach($categories AS $category_row){
-                echo "<option value='".$category_row."'>".$category_row."</option>";
+                echo "<option value='".$category_row['name']."'>".$category_row['name']."</option>";
             }   
 
             echo "</select></td></tr>";  

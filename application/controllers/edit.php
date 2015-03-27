@@ -124,29 +124,29 @@ class Edit extends CI_Controller {
         $this->load->model('edit_model');
         $resources = $this->edit_model->get_resource($id);
 
-        $all_categories[] = '';
+        // $all_categories[] = '';
 
-        foreach ($categories as $category_row) {
+        // foreach ($categories as $category_row) {
         	
-	        if($category_row['categoryone'] != ''){
-	                array_push($all_categories, $category_row['categoryone']);
-	            }
+	       //  if($category_row['categoryone'] != ''){
+	       //          array_push($all_categories, $category_row['categoryone']);
+	       //      }
 
-	            if($category_row['categorytwo'] != ''){
-	                array_push($all_categories, $category_row['categorytwo']);
-	            }
+	       //      if($category_row['categorytwo'] != ''){
+	       //          array_push($all_categories, $category_row['categorytwo']);
+	       //      }
 
-	            if($category_row['categorythree'] != ''){
-	                array_push($all_categories, $category_row['categorythree']);
-	            }
-        }
+	       //      if($category_row['categorythree'] != ''){
+	       //          array_push($all_categories, $category_row['categorythree']);
+	       //      }
+        // }
 
-        asort($all_categories);
-        $all_categories = array_unique($all_categories);
+        // asort($all_categories);
+        // $all_categories = array_unique($all_categories);
 
         // print_r($all_categories);
 
-        $data = array('resources' => $resources, 'categories' => $all_categories, 'id' => $id,);
+        $data = array('resources' => $resources, 'categories' => $categories, 'id' => $id,);
 
         if($resources > 0){
         	if($hospital == 'all'){

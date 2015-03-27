@@ -42,7 +42,7 @@ class Search extends CI_Model{
     public function get_categories(){
         $this->db->select('*');
         $this->db->order_by('name', 'asc');
-        $results = $this->db->get("resources")->result_array();
+        $results = $this->db->get("categories")->result_array();
         return $results;
     }
 
