@@ -102,10 +102,10 @@ class Welcome extends CI_Controller {
         public function search(){
             
             $this->load->view('header.php');
-
-            
-            
-            $this->load->view('search.php');
+            $this->load->model('search', 'categories');
+            $categories = $this->categories->get_categories_search_page();
+            $categories['categories'] = $categories;            
+            $this->load->view('search.php', $categories);
             $x = base_url();
             
             $this->load->library('pagination');
@@ -122,12 +122,6 @@ class Welcome extends CI_Controller {
     	    $this->db->order_by("categoryone", "asc");
     	    $data['resources'] = $this->db->get('resources', $config['per_page'], $this->uri->segment(3));
 
-    	    //$this->load->model('search', 'search_object');
-    	    
-    	    //$data = $this->search_object->get_all();
-    	    
-    	    //$data_array = array('data'=>$data);
-                
     	    $this->load->view('all_results', $data);
             $this->load->view('footer.php');
         }

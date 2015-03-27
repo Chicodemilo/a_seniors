@@ -14,7 +14,7 @@
     <script src="<?php echo base_url();?>javascript/jquery-1.10.2.js"></script>
     <script src="<?php echo base_url();?>javascript/jquery-ui-1.10.4.custom.js"></script>
    
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/apartment_main.css">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/san_ang_srs_main.css">
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

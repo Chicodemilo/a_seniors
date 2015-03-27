@@ -40,14 +40,18 @@ class Search extends CI_Model{
     }
 
     public function get_categories(){
-        $this->db->select('categoryone');
-        $this->db->select('categorytwo');
-        $this->db->select('categorythree');
-        
-        // $this->db->distinct();
-        
+        $this->db->select('*');
+        $this->db->order_by('name', 'asc');
         $results = $this->db->get("resources")->result_array();
         return $results;
+    }
+
+
+    public function get_categories_search_page(){
+        $this->db->where('verified', 'Y');
+        $this->db->order_by('name', 'asc');
+        $data = $this->db->get('categories')->result_array();
+        return $data;
     }
     
    
