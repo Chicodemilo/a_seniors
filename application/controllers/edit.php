@@ -285,43 +285,5 @@ class Edit extends CI_Controller {
 
 
 
-
-
-
-
 }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
