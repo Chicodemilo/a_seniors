@@ -216,28 +216,21 @@ class Edit extends CI_Controller {
         asort($all_categories);
         $all_categories = array_unique($all_categories);
 
-        // print_r($all_categories);
-
         $data = array('categories' => $all_categories, 'id' => $id, 'hospital' => $hospital);
-
 
 		$this->load->view('edit/header.php');
 		$this->load->view('edit/add.php', $data);
 		$this->load->view('footer.php');
-
-
     }
+
 
 
     public function submit_add($id){
     	$hospital = $this->session->userdata('hospital');
-
     	$area_code = $this->input->post('area_code');
     	$phone_pre = $this->input->post('phone_pre');
     	$phone_suf = $this->input->post('phone_suf');
-
     	$phone = '('.$area_code.') '.$phone_pre.'-'.$phone_suf;
-
     	$data = array(
 	    	'name' => $this->input->post('name'),
 	    	'categoryone' => $this->input->post('categoryone'),
@@ -275,11 +268,60 @@ class Edit extends CI_Controller {
 
 
 
+    public function submit_category($id){
+        $role = $this->session->userdata('role');
+        $username = $this->session->userdata('username');
+        if($role == 'admin'){
+            $verified = 'Y';
+        }else{
+            $verified = 'N';
+        }
+        $category = $this->input->post('category');
+        $category = strtoupper($category);
+        $data = array('name'=>$category, 'editor'=>$username, 'verified'=>$verified);
+        $this->db->insert('categories', $data);
+        redirect('edit/edit_this/'.$id, 'refresh');
+    }
+
+
+
 
 
 
 
 }
-
-
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
