@@ -179,9 +179,7 @@ class Edit extends CI_Controller {
 
 
     public function add($id){
-
         $role = $this->session->userdata('role');
-
         if($role == 'admin'){
         	$hospital = 'all';
         }else{
@@ -190,34 +188,9 @@ class Edit extends CI_Controller {
         		$hospital = 'none';
         	}
         }
-
         $this->load->model('search');
         $categories = $this->search->get_categories();
-
-        // print_r($categories);
-
-        $all_categories[] = '';
-
-        foreach ($categories as $category_row) {
-        	
-	        if($category_row['categoryone'] != ''){
-	                array_push($all_categories, $category_row['categoryone']);
-	            }
-
-	            if($category_row['categorytwo'] != ''){
-	                array_push($all_categories, $category_row['categorytwo']);
-	            }
-
-	            if($category_row['categorythree'] != ''){
-	                array_push($all_categories, $category_row['categorythree']);
-	            }
-        }
-
-        asort($all_categories);
-        $all_categories = array_unique($all_categories);
-
-        $data = array('categories' => $all_categories, 'id' => $id, 'hospital' => $hospital);
-
+        $data = array('categories' => $categories, 'id' => $id, 'hospital' => $hospital);
 		$this->load->view('edit/header.php');
 		$this->load->view('edit/add.php', $data);
 		$this->load->view('footer.php');
@@ -266,7 +239,13 @@ class Edit extends CI_Controller {
         $this->load->view('footer.php');
     }
 
+    public function custom_category_blank_id(){
+        $data['id'] = $this->session->userdata('id');
+        $this->load->view('edit/header.php');
+        $this->load->view('edit/custom_category_blank_id.php', $data);
+        $this->load->view('footer.php');
 
+    }
 
     public function submit_category($id){
         $role = $this->session->userdata('role');
@@ -281,6 +260,23 @@ class Edit extends CI_Controller {
         $data = array('name'=>$category, 'editor'=>$username, 'verified'=>$verified);
         $this->db->insert('categories', $data);
         redirect('edit/edit_this/'.$id, 'refresh');
+    }
+
+
+    public function submit_category_blank_id(){
+        $id = $this->session->userdata('id');
+        $role = $this->session->userdata('role');
+        $username = $this->session->userdata('username');
+        if($role == 'admin'){
+            $verified = 'Y';
+        }else{
+            $verified = 'N';
+        }
+        $category = $this->input->post('category');
+        $category = strtoupper($category);
+        $data = array('name'=>$category, 'editor'=>$username, 'verified'=>$verified);
+        $this->db->insert('categories', $data);
+        redirect('edit/add/'.$id, 'refresh');
     }
 
 

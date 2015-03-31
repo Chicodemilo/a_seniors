@@ -62,7 +62,10 @@ echo '</form></table></div>';
 ?>
 <br>
     <table>
-        <?php if($pic_name != ''){
+        <?php
+
+        
+         if($pic_name != ''){
             echo "
                 <tr>
                     <td><img src='".base_url()."resources/".$id."/images/".$pic_name."' alt='".$pic_name."' width='30%'></td>

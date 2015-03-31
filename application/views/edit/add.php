@@ -25,20 +25,22 @@ echo "</table>";
 
 echo "<table><tr class='header_row_edit'><td>CATEGORY 1</td><td>CATEGORY 2</td><td>CATEGORY 3</td></tr>";
 echo "<tr class='row1_edit'><td><input type='hidden' id='categoryone_value'> <select name='categoryone' id='categoryone' required tabindex=12> ";
+echo "<option value=''>None</option>";
 foreach($categories AS $category_row){
-    echo "<option value='".$category_row."'>".$category_row."</option>";
+    echo "<option value='".$category_row['name']."'>".$category_row['name']."</option>";
 }     
 echo "</select></td>";
-
 echo "<td><input type='hidden' id='categorytwo_value' > <select name='categorytwo' id='categorytwo'tabindex=13 > ";
+echo "<option value=''>None</option>";
 foreach($categories AS $category_row){
-    echo "<option value='".$category_row."'>".$category_row."</option>";
+    echo "<option value='".$category_row['name']."'>".$category_row['name']."</option>";
 }     
 echo "</select></td>";
 
 echo "<td colspan='2'><input type='hidden' id='categorythree_value' > <select name='categorythree' id='categorythree'tabindex=14> ";
+echo "<option value=''>None</option>";
 foreach($categories AS $category_row){
-    echo "<option value='".$category_row."'>".$category_row."</option>";
+    echo "<option value='".$category_row['name']."'>".$category_row['name']."</option>";
 }   
 echo "</select></td></tr>";  
 
@@ -48,7 +50,12 @@ echo "<td><input id='button' type='submit' value='SUBMIT RESOURCE'></td></tr>";
 echo '</form></table></div>';
 
 
-echo "<br><br><br><br>";
-
 ?>
+
+<br>
+    <table>
+        <tr>
+            <td class='lefter_light'><a href="<?php echo base_url(); ?>edit/custom_category_blank_id">CREATE A CUSTOM CATEGORY</a></td>
+        </tr>
+    </table>
 </div>
